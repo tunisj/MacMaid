@@ -13,8 +13,8 @@ fi
 #Delete Saved SSIDs For Security
 #Be Sure To Set Home And Work SSID for ease of use.
 printf "Deleting saved wireless networks.\n"
-homessid="Ben_D_Knee_5G"
-workssid="AOC-WiFi"
+homessid="Update"
+workssid="Update"
 IFS=$'\n'
 for ssid in $(networksetup -listpreferredwirelessnetworks en0 | grep -v "Preferred networks on en0:" | grep -v $homessid | grep -v $workssid | sed "s/[\	]//g")
 do
